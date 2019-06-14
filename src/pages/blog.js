@@ -2,25 +2,11 @@ import React from 'react';
 import {Link, graphql, useStaticQuery} from 'gatsby';
 
 import Layout from '../components/layout';
+import Head from './head';
 import blogStyles from './blog.module.scss'
 
 const blog = () => {
     const data = useStaticQuery(graphql`
-        # query {
-        #     allMarkdownRemark {
-        #         edges {
-        #             node {
-        #                 frontmatter {
-        #                     title
-        #                     date
-        #                 }
-        #                 fields{
-        #                     slug
-        #                 }
-        #             }
-        #         }
-        #     }
-        # }
         query {
             allContentfulBlogPost (
                 sort: {
@@ -39,6 +25,7 @@ const blog = () => {
     `);
     return (
         <Layout>
+            <Head title="Blog"/>
             <h1>Blog</h1>
             <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map(edge => {

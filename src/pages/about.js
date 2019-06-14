@@ -1,10 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import Head from './head';
 
 const aboutMe = () => {
     return (
         <Layout>
+            <Head title="About Me"/>
             <h1>About Me</h1>
             <p> My name is himanshu kumar das and Iives in Delhi, India.
                 I love to build applications that solves my everyday problems.

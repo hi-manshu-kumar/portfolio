@@ -1,10 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import Head from './head';
 
 const skills = () => {
     return (
         <Layout>
+            <Head title="Skills"/>
             <h1>My Skills</h1>
             <div>
                 <div>
