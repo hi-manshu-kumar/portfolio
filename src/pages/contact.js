@@ -2,32 +2,32 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import Head from './head';
+import contactStyles from './contact.module.scss';
 
 const contact = () => {
     return (
         <Layout>
             <Head title="Contact"/>
-            <h1>Contact Me</h1>
-            <div>
-                <p>Lets make something new, different and more meaningfull?</p>
-                <p>JUST SAY HELLO!</p>
-                <ul>
-                    <li>Github</li>
-                    <li>facebook</li>
-                    <li>Linkedin</li>
-                    <li>twitter</li>
-                </ul>
-            </div>
-            <div>
-                <form action="">
-                    <label htmlFor="">Name:</label>
-                    <input type="text" placeholder="Enter name here"/>
-                    <label htmlFor="">Email:</label>
-                    <input type="text" placeholder="Enter email here"/>
-                    <label htmlFor="">Message:</label>
-                    <input type="text" placeholder="Enter message here"/>
-                    <button type="submit">Send Mail ></button>
-                </form>
+            <h1 className={contactStyles.content}><span/>Contact Me</h1>
+            <div className={contactStyles.contactBox} >
+                <div className={contactStyles.details}>
+                    <p>Lets make something new, <br/> different and more <br/> meaningfull?</p>
+                    <p>JUST SAY HELLO!</p>
+                    <ul>
+                        <li>Github</li>
+                        <li>facebook</li>
+                        <li>Linkedin</li>
+                        <li>twitter</li>
+                    </ul>
+                </div>
+                <div className={contactStyles.formBox}>
+                    <form action="" className={contactStyles.form}>
+                        <input type="text" placeholder="Name:"/>
+                        <input type="text" placeholder="Email:"/>
+                        <textarea placeholder="Message:"/>
+                        <button type="submit" className={contactStyles.btnEmpty}>Send Mail ></button>
+                    </form>
+                </div>
             </div>
         </Layout>
     )

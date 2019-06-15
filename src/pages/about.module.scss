@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+}
+
+.left-half {
+  flex: 1;
+  padding: 1rem;
+}
+.right-half {
+  flex: 1;
+  padding: 1rem;  
+}
+
+.btnEmpty {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.6rem 1rem ;
+  width: 191px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.content{
+  color: black; 
+  width: 295px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  &:before{
+    content: '';
+    border-top: 2px solid black;
+    margin: 0 17px 0 0;
+    flex: 1 0 17px;
+    color: black;
+  }
+
+}

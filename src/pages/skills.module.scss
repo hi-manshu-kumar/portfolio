@@ -1,0 +1,36 @@
+.clearfix{
+    &after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    margin: 0 auto;
+}
+
+.left{
+    transform: rotate(-90deg);
+    transform-origin: 89% 165%;
+    float: left;
+
+        color: black; 
+        width: 368px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: normal;
+        &:before{
+            content: '';
+            border-top: 2px solid black;
+            margin: 0 17px 0 0;
+            flex: 1 0 17px;
+            color: black;
+        }
+        letter-spacing: 12px;
+}
+
+.right{
+    float: right;
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+}
