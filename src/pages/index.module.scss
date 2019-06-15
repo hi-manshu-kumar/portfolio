@@ -43,12 +43,14 @@
     margin-left: 60px;
 }
 
-.container {
-    // color: white;
-    // display: flex;
-    // flex-direction: column;
-    // align-content: center;
-    // justify-content: center;
-    // min-height: 100vh;
-    // padding: 510px 0;
+.img-container{
+    position: absolute;
+    top: -7rem;
+    width: 120%;
+    left: 140%;
+}
+
+.img{
+    // width: 40%;
+    width: 40rem;
 }

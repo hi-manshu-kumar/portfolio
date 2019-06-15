@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from './head';
 import aboutStyles from './about.module.scss'
+import about from './about.png'
 
 const aboutMe = () => {
     return (
@@ -10,7 +11,7 @@ const aboutMe = () => {
             <Head title="About Me" />
             <span className={aboutStyles.container}>
                 <div className={aboutStyles.leftHalf}>
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus doloremque ratione recusandae modi a tempora omnis vero minima sequi debitis?</h1>
+                    <img src={about} alt="About Me"/>
                 </div>
                 <div className={aboutStyles.rightHalf}>
                     <h1 className={aboutStyles.content}><span/>About Me</h1>

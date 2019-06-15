@@ -4,6 +4,7 @@ import {Link} from 'gatsby'
 import Layout from '../components/layout';
 import Head from './head';
 import indexStyles from './index.module.scss'
+import dev from './dev.png'
 
 const indexpage = () => {
     return (
@@ -16,6 +17,9 @@ const indexpage = () => {
                 <button className={indexStyles.btnEmpty}>See work</button>
                 <Link to="/contact">
                 <button className={indexStyles.btnFill}>Hire Me</button></Link>
+            </span>
+            <span className={indexStyles.imgContainer}>
+                <img src={dev} alt="developer" className={indexStyles.img}/>
             </span>
         </Layout>
     )
