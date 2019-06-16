@@ -3,8 +3,8 @@ import {Link} from 'gatsby'
 
 import Layout from '../components/layout';
 import Head from './head';
-import indexStyles from './index.module.scss'
-import dev from './dev.png'
+import indexStyles from './styles/index.module.scss'
+import dev from './images/dev.png'
 
 const indexpage = () => {
     return (

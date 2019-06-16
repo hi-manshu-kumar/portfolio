@@ -33,4 +33,8 @@
     display: flex;
     width: 40vw;
     justify-content: space-between;
+    li{
+        list-style-image: url('./Polygon.png');
+        margin-left: 2rem;
+    }
 }

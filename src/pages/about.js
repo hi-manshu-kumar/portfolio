@@ -2,8 +2,8 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import Head from './head';
-import aboutStyles from './about.module.scss'
-import about from './about.png'
+import aboutStyles from './styles/about.module.scss'
+import about from './images/about.png'
 
 const aboutMe = () => {
     return (

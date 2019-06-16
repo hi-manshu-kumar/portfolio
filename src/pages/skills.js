@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import Head from './head';
-import skillStyles from './skills.module.scss';
+import skillStyles from './styles/skills.module.scss';
 
 const skills = () => {
     return (
@@ -18,8 +18,6 @@ const skills = () => {
                             <li>Javascript</li>
                             <li>Python</li>
                         </ul>
-                    {/* </div>
-                    <div> */}
                         <h2>Frontend</h2>
                         <ul>
                             <li>Html</li>
@@ -36,8 +34,6 @@ const skills = () => {
                             <li>ExpressJs</li>
                             <li>Firebase</li>
                         </ul>
-                    {/* </div>
-                    <div> */}
                         <h2>Database</h2>
                         <ul>
                             <li>MongoDB</li>

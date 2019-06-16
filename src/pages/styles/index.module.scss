@@ -28,6 +28,26 @@
     width: 191px;
     height: 52px;
     cursor: pointer;
+    transition: all .2s;
+    &:link, &:visited{
+        box-shadow: none;
+        transform: translateY(0px);
+
+    }
+    &:hover{
+        transform: translateY(-3px);
+        background-color: black;
+        color: white;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+        // 2px 2px 8px #efefef;
+        
+    }
+    &:active,&:focus{
+        // outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    }
+    
 }
 
 .btnFill {

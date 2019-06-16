@@ -3,8 +3,8 @@ import {Link} from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from './head';
-import error from './404.png'
-import errorStyles from './404.module.scss';
+import error from './images/404.png'
+import errorStyles from './styles/404.module.scss';
 
 const NotFound = () => {
     return (

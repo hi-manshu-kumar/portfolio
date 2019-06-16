@@ -4,8 +4,8 @@ import {faTwitter, faGithub, faLinkedin, faFacebook} from '@fortawesome/free-bra
 
 import Layout from '../components/layout';
 import Head from './head';
-import contactStyles from './contact.module.scss';
-import arrow from './arrow.png';
+import contactStyles from './styles/contact.module.scss';
+import arrow from './images/arrow.png';
 
 const contact = () => {
     return (
