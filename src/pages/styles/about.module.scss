@@ -7,6 +7,9 @@
 .left-half {
   flex: 1;
   padding: 1rem;
+    img{
+      transform: translateY(-3rem);
+    }
 }
 .right-half {
   flex: 1;

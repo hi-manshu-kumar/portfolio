@@ -5,6 +5,7 @@
         clear: both;
     }
     margin: 0 auto;
+    padding: -10rem 0;
 }
 
 .left{
@@ -29,12 +30,16 @@
 }
 
 .right{
-    float: right;
+    float: left;
     display: flex;
     width: 40vw;
     justify-content: space-between;
     li{
         list-style-image: url('./Polygon.png');
-        margin-left: 2rem;
+        list-style-type: disc;
+        // margin-left: 1rem;
+        img{
+            transform: translateY(1px)
+        }
     }
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from './head';
 import skillStyles from './styles/skills.module.scss';
+import triangle from './styles/Polygon.png';
 
 const skills = () => {
     return (
@@ -14,31 +15,31 @@ const skills = () => {
                     <div>
                         <h2>Programming</h2>
                         <ul>
-                            <li>C / C++</li>
-                            <li>Javascript</li>
-                            <li>Python</li>
+                            <li><img src={triangle} alt="list-style"/> C / C++</li>
+                            <li><img src={triangle} alt="list-style"/> Javascript</li>
+                            <li><img src={triangle} alt="list-style"/> Python</li>
                         </ul>
                         <h2>Frontend</h2>
                         <ul>
-                            <li>Html</li>
-                            <li>CSS, SASS</li>
-                            <li>Bootstrap, jQuery</li>
-                            <li>Angular.js, Angular2+</li>
-                            <li>React.js, Redux</li>
+                            <li><img src={triangle} alt="list-style"/> Html</li>
+                            <li><img src={triangle} alt="list-style"/> CSS, SASS</li>
+                            <li><img src={triangle} alt="list-style"/> Bootstrap, jQuery</li>
+                            <li><img src={triangle} alt="list-style"/> Angular.js, Angular2+</li>
+                            <li><img src={triangle} alt="list-style"/> React.js, Redux</li>
                         </ul>
                     </div>
                     <div>
                         <h2>Backend</h2>
                         <ul>
-                            <li>Node.js</li>
-                            <li>ExpressJs</li>
-                            <li>Firebase</li>
+                            <li><img src={triangle} alt="list-style"/> Node.js</li>
+                            <li><img src={triangle} alt="list-style"/> ExpressJs</li>
+                            <li><img src={triangle} alt="list-style"/> Firebase</li>
                         </ul>
                         <h2>Database</h2>
                         <ul>
-                            <li>MongoDB</li>
-                            <li>PostgreSql</li>
-                            <li>Firebase</li>
+                            <li><img src={triangle} alt="list-style"/> MongoDB</li>
+                            <li><img src={triangle} alt="list-style"/> PostgreSql</li>
+                            <li><img src={triangle} alt="list-style"/> Firebase</li>
                         </ul>
                     </div>
                 </div>

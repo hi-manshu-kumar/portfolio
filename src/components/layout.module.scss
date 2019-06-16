@@ -6,8 +6,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    // justify-content: flex-end;
-    // align-content: space-around;
+    overflow: auto;
 }
 
 .content{
@@ -15,7 +14,9 @@
 }
 
 .span{
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);    
+    // position: absolute;
+    // top: 50%;
+    // transform: translate(0%, -50%);  
+    padding-top: calc(6rem );
+    
 }
