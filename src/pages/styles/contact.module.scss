@@ -48,6 +48,9 @@
         // text-decoration: none;
         list-style-type: none;
         font-size: 40px;
+        a{
+            color: black;
+        }
     }
 }
 
@@ -89,6 +92,23 @@
     cursor: pointer;
     text-align: center;
     margin-left: 15%;
+    &:link, &:visited{
+        box-shadow: none;
+        transform: translateY(0px);
+
+    }
+    &:hover{
+        transform: translateY(-3px);
+        background-color: black;
+        color: white;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+        // 2px 2px 8px #efefef;
+        
+    }
+    &:active,&:focus{
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    }
 }
 
 

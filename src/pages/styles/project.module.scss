@@ -41,6 +41,24 @@
             text-decoration: none;
             color:black 
         }
+        &:link, &:visited{
+            box-shadow: none;
+            transform: translateY(0px);
+    
+        }
+        &:hover{
+            transform: translateY(-3px);
+            background-color: black;
+            color: white;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+            // 2px 2px 8px #efefef;
+            font-weight: bold;
+            
+        }
+        &:active,&:focus{
+            transform: translateY(-1px);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+        }
     }
     li:nth-child(1){
         background-image: url('../projects/portfolio.png');

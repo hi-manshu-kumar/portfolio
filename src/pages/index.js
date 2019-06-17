@@ -14,7 +14,9 @@ const indexpage = () => {
                 <h2 className={indexStyles.content}><span/>Hello !</h2>
                 <h1>I'm Himanshu Das</h1>
                 <h2 className={indexStyles.details}>I'm a software engineer specializing in developing high-quality applications and websites from scratch taking care of both frontend and backend part. </h2>
+                <Link to="/project">                
                 <button className={indexStyles.btnEmpty}>See work</button>
+                </Link>
                 <Link to="/contact">
                 <button className={indexStyles.btnFill}>Hire Me</button></Link>
             </span>

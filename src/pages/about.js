@@ -6,6 +6,13 @@ import aboutStyles from './styles/about.module.scss'
 import about from './images/about.png'
 
 const aboutMe = () => {
+    const redirect = () => {
+        window.open(
+            'https://www.google.com',
+            '_blank' // <- This is what makes it open in a new window.
+        );
+    }
+    
     return (
         <Layout>
             <Head title="About Me" />
@@ -25,7 +32,8 @@ const aboutMe = () => {
                         Passionate about solving interesting problems.<br/>
                         My daily lifecyle include code, launch, ship and repeat.
                     </p>
-                    <button className={aboutStyles.btnEmpty}>Download CV</button>
+
+                    <button className={aboutStyles.btnEmpty} onClick={redirect}>Download CV</button>
                 </div>
             </span>
         </Layout>

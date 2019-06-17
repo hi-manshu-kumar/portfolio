@@ -16,11 +16,11 @@ const project = () => {
                 <h1 className={projectStyles.content}><span/>Projects</h1>
                 <ul className={projectStyles.flexContainer}>
                 <li className={projectStyles.flexItem}><Link to="/"><span>Portfolio<FontAwesomeIcon icon={faLink} /></span></Link></li>
-                <li className={projectStyles.flexItem}><a href="https://serene-caverns.herokuapp.com/"> <span>E-commerce App<FontAwesomeIcon icon={faLink} /></span></a></li>
-                <li className={projectStyles.flexItem}><a href="https://snapyshare.herokuapp.com"> <span>Snappy Share<FontAwesomeIcon icon={faLink} /></span></a></li>
-                <li className={projectStyles.flexItem}><a href="https://weather-app-hkd.herokuapp.com/"> <span>Weather App<FontAwesomeIcon icon={faLink} /></span></a></li>
-                <li className={projectStyles.flexItem}><a href="https://testengine-a27d5.firebaseapp.com/"> <span>Test Engine<FontAwesomeIcon icon={faLink} /></span></a></li>
-                <li className={projectStyles.flexItem}><a href="https://hi-manshu-kumar.github.io/Food-Restaurant-E-commerce-Site/indextry.html#/"> <span>Restaurant Site<FontAwesomeIcon icon={faLink} /></span></a></li>
+                <li className={projectStyles.flexItem}><a href="https://serene-caverns.herokuapp.com/" target="_blank"> <span>E-commerce App<FontAwesomeIcon icon={faLink} /></span></a></li>
+                <li className={projectStyles.flexItem}><a href="https://snapyshare.herokuapp.com" target="_blank"> <span>Snappy Share<FontAwesomeIcon icon={faLink} /></span></a></li>
+                <li className={projectStyles.flexItem}><a href="https://weather-app-hkd.herokuapp.com/" target="_blank"> <span>Weather App<FontAwesomeIcon icon={faLink} /></span></a></li>
+                <li className={projectStyles.flexItem}><a href="https://testengine-a27d5.firebaseapp.com/" target="_blank"> <span>Test Engine<FontAwesomeIcon icon={faLink} /></span></a></li>
+                <li className={projectStyles.flexItem}><a href="https://hi-manshu-kumar.github.io/Food-Restaurant-E-commerce-Site/indextry.html#/" target="_blank"> <span>Restaurant Site<FontAwesomeIcon icon={faLink} /></span></a></li>
                 </ul>
             </span>
         </Layout>

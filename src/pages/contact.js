@@ -17,12 +17,12 @@ const contact = () => {
                     <div className={contactStyles.details}>
                         <p>Lets make something new, <br/> different and more <br/> meaningfull?</p>
                         <p>JUST SAY HELLO!</p>
-                        <img src={arrow} alt=""/>
+                        <img src={arrow} alt="arrow"/>
                         <ul>
-                            <li><FontAwesomeIcon icon={faGithub} /></li>
-                            <li><FontAwesomeIcon icon={faFacebook} /></li>
-                            <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                            <li><FontAwesomeIcon icon={faTwitter} /></li>
+                            <li><a href="https://github.com/hi-manshu-kumar" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></li>
+                            <li><a href="https://www.facebook.com/kushwaaha" target="_blank"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                            <li><a href="https://www.linkedin.com/in/himanshu-kumar-das-101104151" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                            <li><a href="https://twitter.com/Himanshu_hd420" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a></li>
                         </ul>
                     </div>
                     <div className={contactStyles.formBox}>
