@@ -19,10 +19,10 @@ const contact = () => {
                         <p>JUST SAY HELLO!</p>
                         <img src={arrow} alt="arrow"/>
                         <ul>
-                            <li><a href="https://github.com/hi-manshu-kumar" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></li>
-                            <li><a href="https://www.facebook.com/kushwaaha" target="_blank"><FontAwesomeIcon icon={faFacebook}/></a></li>
-                            <li><a href="https://www.linkedin.com/in/himanshu-kumar-das-101104151" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-                            <li><a href="https://twitter.com/Himanshu_hd420" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                            <li><a href="https://github.com/hi-manshu-kumar" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a></li>
+                            <li><a href="https://www.facebook.com/kushwaaha" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                            <li><a href="https://www.linkedin.com/in/himanshu-kumar-das-101104151" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                            <li><a href="https://twitter.com/Himanshu_hd420" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter}/></a></li>
                         </ul>
                     </div>
                     <div className={contactStyles.formBox}>

@@ -28,7 +28,7 @@ const aboutMe = () => {
                         Javscript is my weapon of choice anytime. <br/>
                     </p>
                     <p>
-                        I have maintained, developed and launched multiple projects from scratch, carrying the development of its' back-end and front-end codebases. <br/>
+                        I have maintained, developed and launched multiple projects from scratch, <br/>carrying the development of its' back-end and front-end codebases. <br/>
                         Passionate about solving interesting problems.<br/>
                         My daily lifecyle include code, launch, ship and repeat.
                     </p>

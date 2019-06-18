@@ -12,12 +12,17 @@
         flex: 1 0 17px;
         color: black;
     }
-
 }
 
 .details{
     width: 574px;
     font-weight: normal;
+    height:9rem;
+    @media only screen and (max-width: 600px) {
+        word-wrap: break-word;
+        width: 80vw;
+        height: auto;
+    }
 }
 
 .btnEmpty {
@@ -29,6 +34,7 @@
     height: 52px;
     cursor: pointer;
     transition: all .2s;
+
     &:link, &:visited{
         box-shadow: none;
         transform: translateY(0px);
@@ -79,17 +85,25 @@
             transform: translateY(-1px);
             box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
         }
+
+    @media only screen and (max-width: 600px){
+        margin: 4% 0;
+    }
     
 }
 
 .img-container{
     position: absolute;
     top: 8rem;
-    width: 120%;
+    width: 46%;
     left: 54%;
+    @media only screen and (max-width: 600px){
+        display: none;
+    }
 }
 
 .img{
     // width: 40%;
     width: 40rem;
+
 }

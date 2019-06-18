@@ -26,7 +26,20 @@
     justify-content: space-evenly;
     max-width: 1100px;
     height: 64vh;
-    margin: 0 10rem;
+    margin: 0 auto;
+    @media only screen and (max-width: 600px) {
+        height: auto;
+        // width: auto;
+        min-width: 260px;
+
+    }
+    ul {
+        min-width: 260px;
+        @media only screen and (max-width: 600px) {
+            height: auto;
+        }
+        height: 46rem;
+    }
     li{
         background-repeat: no-repeat;
         background-size: cover;
@@ -84,8 +97,8 @@
 .flex-item {
     // background: tomato;
     padding: 5px;
-    width: 250px;
-    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
     // height: 150px;
     margin: 1rem ;
     margin-top: 10px;

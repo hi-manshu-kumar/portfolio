@@ -27,6 +27,14 @@
             color: black;
         }
         letter-spacing: 12px;
+    @media only screen and (max-width: 600px) {
+        // position: absolute;
+        transform: rotate(0);
+        transform-origin: 0;
+        letter-spacing: 0px;
+        width: 18rem;
+
+    }
 }
 
 .right{
@@ -37,9 +45,12 @@
     li{
         list-style-image: url('./Polygon.png');
         list-style-type: disc;
-        // margin-left: 1rem;
+        margin-left: 1rem;
         img{
             transform: translateY(1px)
         }
+    }
+    @media only screen and (max-width: 600px) {
+    width: auto;
     }
 }

@@ -7,8 +7,11 @@
 
 .title{
     color: #000;
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: none;
+    @media only screen and (max-width: 600px)  {
+        font-size: 2rem;
+    }
 }
 
 .nav-list{
@@ -16,6 +19,10 @@
     flex-direction: row;
     list-style-type: none;
     margin:0;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        color: red;
+    }
 }
 
 .nav-item {
@@ -31,3 +38,5 @@
 .active-nav-item{
     color: #333;
 }
+
+// @media only screen and (max-width: 600px) {
