@@ -3,7 +3,6 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from './head';
 import skillStyles from './styles/skills.module.scss';
-import triangle from './styles/Polygon.png';
 
 const skills = () => {
     return (

@@ -1,9 +1,13 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import {Link, graphql, useStaticQuery} from 'gatsby';
+import Burger from '@animated-burgers/burger-squeeze' 
+// don't forget the styles
+import '@animated-burgers/burger-squeeze/dist/styles.css' 
 
 import headerStyles from './header.module.scss'
 
 const Header = () => {
+    const [count, setCount] = useState(false);
     const data = useStaticQuery(graphql`
         query {
             site{
@@ -14,6 +18,9 @@ const Header = () => {
             }
         }
     `)
+    const handleBurger = ()  => {
+        setCount(!count)
+    }
     return (
         <header className={headerStyles.header}>
             <h1>
@@ -22,6 +29,10 @@ const Header = () => {
                 </Link>
             </h1>
             <nav>
+                <label>
+                    <input type="checkbox"/>
+                    <Burger className="menui" isOpen={count} onClick={handleBurger}/>
+
                 <ul className={headerStyles.navList}>
                     <li>
                         <Link to="/" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Home</Link>
@@ -39,6 +50,8 @@ const Header = () => {
                         <Link to="/contact" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Contact</Link>
                     </li>
                 </ul>
+                </label>
+
             </nav>
         </header>
     )

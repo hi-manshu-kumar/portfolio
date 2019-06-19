@@ -22,7 +22,8 @@
 .contact-box{
     display: flex;
     justify-content: center;
-    width:1500px;
+    width: 79vw;
+    margin: 0 auto;
     @media only screen and (max-width: 600px) {
         flex-direction: column;
         width:80vw;
@@ -51,11 +52,16 @@
         }
         @media only screen and (max-width: 600px) {
             // text-align: left;
+            text-align: left;
+            margin: 7% 0;
         }
     }   
     img {
         width: 117px;
         align-self: end;
+        @media only screen and (max-width: 600px) {
+            align-self: auto;
+        }
     }
     ul{
         margin-top: 2rem;
@@ -81,7 +87,7 @@
     width: 26.2rem;
     height: 432px;
     @media only screen and (max-width: 600px) {
-        width: 21.2rem;
+        width: 20.2rem;
         height: 24rem;
     }    
     input, textarea{
