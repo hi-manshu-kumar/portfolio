@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import {Link, graphql, useStaticQuery} from 'gatsby';
 import Burger from '@animated-burgers/burger-squeeze' 
+import Helmet from 'react-helmet';
 // don't forget the styles
 import '@animated-burgers/burger-squeeze/dist/styles.css' 
 
@@ -23,6 +24,19 @@ const Header = () => {
         setCount(!count)
     }
     return (
+        <>
+            <Helmet
+                title={data.site.siteMetadata.title}
+                meta={[
+                    { name: 'description', content: data.site.siteMetadata.description },
+                    { name: 'keywords', content: data.site.siteMetadata.keyword },
+                ]}
+                >
+                <html lang="en" />
+                <noscript>{`
+                    Opps, I cann't work without javascript, will you please enable javascript.
+                `}</noscript>
+            </Helmet>
         <header className={headerStyles.header}>
             <h1>
                 <Link className={headerStyles.title} to="/">
@@ -55,6 +69,7 @@ const Header = () => {
 
             </nav>
         </header>
+        </>
     )
 }
 

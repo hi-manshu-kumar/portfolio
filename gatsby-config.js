@@ -4,9 +4,11 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const path = require('path');
+const siteUrl = 'https://himanshu.netlify.com'
 module.exports = {
   /* Your site config here */
   siteMetadata: {
+    siteUrl,
     title: 'Himanshu Das Portfolio |Full Stack Dev',
     description: 'I am a software engineer specializing in developing high-quality applications and websites from scratch taking care of both frontend and backend part.',
     author: 'Himanshu Das'
@@ -53,6 +55,15 @@ module.exports = {
         theme_color: '#2be1f2',
         display: 'standalone',
         icon: path.join(__dirname, 'static/favicon2.ico'),
+      },
+    },
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap.xml`,
+        policy: [{ userAgent: '*', disallow: '' }],
       },
     },
     'gatsby-plugin-offline',
