@@ -8,7 +8,7 @@ import about from './images/about.png'
 const aboutMe = () => {
     const redirect = () => {
         window.open(
-            'https://www.google.com',
+            'https://drive.google.com/file/d/1wk8kVSkMq_gL_nEg8pFNMaNy56LAIs-W/view?usp=sharing',
             '_blank' // <- This is what makes it open in a new window.
         );
     }
