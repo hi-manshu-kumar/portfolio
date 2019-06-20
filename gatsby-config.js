@@ -3,11 +3,12 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+const path = require('path');
 module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Himanshu Das Portfolio |Full Stack Dev',
+    description: 'I am a software engineer specializing in developing high-quality applications and websites from scratch taking care of both frontend and backend part.',
     author: 'Himanshu Das'
   },
   plugins: [
@@ -41,6 +42,20 @@ module.exports = {
           }}
         ]
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Himanshu Portfolio',
+        short_name: 'Himank',
+        start_url: '/',
+        background_color: '#2be1f2',
+        theme_color: '#2be1f2',
+        display: 'standalone',
+        icon: path.join(__dirname, 'static/favicon2.ico'),
+      },
+    },
+    'gatsby-plugin-offline',
+
   ]
 }

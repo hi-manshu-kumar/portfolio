@@ -13,6 +13,7 @@ const Header = () => {
             site{
                 siteMetadata{
                     title 
+                    description
                     author
                 }
             }

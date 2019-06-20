@@ -23,7 +23,7 @@ const aboutMe = () => {
                 <div className={aboutStyles.rightHalf}>
                     <h1 className={aboutStyles.content}><span/>About Me</h1>
                     <p> 
-                        My name is himanshu kumar das and Iives in Delhi, India.<br/>
+                        My name is himanshu kumar das and I live in Delhi, India.<br/>
                         I love to build applications that solves my everyday problems. <br/>
                         Javscript is my weapon of choice anytime. <br/>
                     </p>
